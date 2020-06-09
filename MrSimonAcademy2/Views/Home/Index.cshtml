@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNet.Identity
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="intro-header" style="background-image: url('../../Content/img/caralog1.jpg')">
+    <div class="container overlay">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Mr. Simon Academy</h1>
+                    <hr class="small">
+                    <span class="subheading">Английский это просто!</span>
+                    @if (Request.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Смотреть информацию о пользователях", "GetUsers", "Home")
+
+                    }
+
+             
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section blog-mini">
+    <div class="container-fluid container-90">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="post-preview">
+                    <a href="/Home/Services" class="blog-mini__post">
+                        <p class="post-meta">1 сентября, 2020</p>
+                        <div class="blog-mini__img">
+                            <img class="img-responsive" src="../../Content/img/blog/blog-2.jpg">
+                        </div>
+                        <h2 class="post-title">
+                            Сколько стоят наши занятия?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Групповые занятия 1600₽ - 2200₽
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="post-preview">
+                    <a href="/Home/Services" class="blog-mini__post">
+                        <p class="post-meta">1 сентября, 2020</p>
+                        <div class="blog-mini__img">
+                            <img class="img-responsive" src="../../Content/img/blog/blog-2.jpg">
+                        </div>
+                        <h2 class="post-title">
+                            Сколько стоят наши занятия?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Групповые занятия 1600₽ - 2200₽
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="post-preview">
+                    <a href="/Home/Services" class="blog-mini__post">
+                        <p class="post-meta">1 сентября, 2020</p>
+                        <div class="blog-mini__img">
+                            <img class="img-responsive" src="../../Content/img/blog/blog-2.jpg">
+                        </div>
+                        <h2 class="post-title">
+                            Сколько стоят наши занятия?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Групповые занятия 1600₽ - 2200₽
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+

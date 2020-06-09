@@ -1,0 +1,30 @@
+﻿@model MrSimonAcademy2.Models.EditModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout_login.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        @Html.ValidationSummary(true, "")
+        <div>
+            <p>Имя: @Html.EditorFor(model => model.UserFName)</p>
+        </div>
+        <div>
+            <p>Фамилия: @Html.EditorFor(model => model.UserLName)</p>
+        </div>
+
+
+        <div>
+            <div>
+                <input type="submit" value="Сохранить" />
+            </div>
+        </div>
+    </div>
+}
+
+
+

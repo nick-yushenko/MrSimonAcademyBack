@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<!-- Set your background image for this header on the line below. -->
+<section class="intro-header" style="background-image: url('../../Content/img/caralog12.jpg')">
+    <div class="container overlay">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+                <div class="page-heading">
+                    <h1>Contact Us</h1>
+                    <hr class="small">
+                    <span class="subheading">Г. Красноярск, ул. Вавилова 41Б</span>
+                    <h2><i class="fa fa-phone"></i> +0 123 456 78 90</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Хотите связаться с нами? Заполните форму ниже, чтобы отправить нам сообщение, и мы перезвоним Вам очень скоро!</p>
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Имя</label>
+                            <input type="text" class="form-control" placeholder="Имя" id="name" required
+                                   data-validation-required-message="Как к Вам обращаться?">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Ваш E-mail адрес</label>
+                            <input type="email" class="form-control" placeholder="E-mail адрес" id="email" required
+                                   data-validation-required-message="Мы не рассылаем спам, честно причестно!">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Номер телефона</label>
+                            <input type="tel" class="form-control" placeholder="Номер телефона" id="phone" required
+                                   data-validation-required-message="На какой номер Вам позвонить?">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default">Заказать обратный звонок</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
